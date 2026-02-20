@@ -11,7 +11,7 @@
 
 
 
-<form>
+<form id = "moopersssForm">
   <label for="name">Name:</label><br>
   <input type="text" id="name" name="name" value=""><br>
   <label for="hp">HP:</label><br>
@@ -27,6 +27,7 @@
   <select id="gs" name="gs">
     <option value="good">Regular</option>
     <option value="evil">Giga</option>
+    <option value="meh">King</option>
   </select>
 
 
@@ -54,10 +55,14 @@ Kind: "Giga",
 Type: "Good",
 
 }
+
+// 
+var form = document.getElementById("moopersssForm")
+
+
 console.log(data)
 
 
 </script>
 
 </html>
-
