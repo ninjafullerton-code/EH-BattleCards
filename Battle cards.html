@@ -62,6 +62,16 @@ var form = document.getElementById("moopersssForm")
 
 console.log(data)
 
+function extractForm() {
+
+var form = document.getElementById("moopersssForm")
+var moopersss = new FormData(form);
+
+
+console.log(moopersss)
+}
+
+document.getElementById("myForm").addEventListener("submit", extractForm)
 
 </script>
 
