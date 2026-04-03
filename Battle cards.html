@@ -62,16 +62,25 @@ var form = document.getElementById("moopersssForm")
 
 console.log(data)
 
-function extractForm() {
+function extractForm(event) {
+  event.preventDefault()
 
 var form = document.getElementById("moopersssForm")
-var moopersss = new FormData(form);
 
+
+var moopersss = {
+
+name: document.getElementById("name").value,
+Hp: document.getElementById("hp").value,
+Kind: document.getElementById("gs").value,
+Type: document.getElementById("evil").value,
+
+}
 
 console.log(moopersss)
 }
 
-document.getElementById("myForm").addEventListener("submit", extractForm)
+document.getElementById("moopersssForm").addEventListener("submit", extractForm)
 
 </script>
 
