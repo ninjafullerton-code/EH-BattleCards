@@ -1,6 +1,39 @@
 <!DOCTYPE html>
 <html>
 
+<style>
+
+
+.card {
+      width: 320px;
+      height: 470px;
+      padding: 12px;
+      background: linear-gradient(135deg, #b9823b, #e2b66b, #8d5726);
+      border: 8px solid #2a1a0d;
+      border-radius: 10px;
+      box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.55),
+        inset 0 0 0 3px rgba(255, 235, 180, 0.5);
+      box-sizing: border-box;
+    }
+      .card-inner {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        background: 2px solid #3a2410;
+        border: 2px solid #3a2410;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+    
+
+
+
+
+</style>
+
+
 <head>
 
 </head>
@@ -85,7 +118,7 @@ document.getElementById("moopersssForm").addEventListener("submit", extractForm)
 
 </script>
 
-<div>
+<div class="card">
 
     <div class="card-inner">
 
@@ -112,6 +145,11 @@ document.getElementById("moopersssForm").addEventListener("submit", extractForm)
             paragraphs, lists, icons, badges, or custom content.
           </div>
         </div>
+
+        <footer class="card-stats"> By 2026 Easton </footer>
+      </section>
+
+
 
 
 
